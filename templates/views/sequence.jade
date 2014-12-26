@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block content
+  .container: .jumbotron
+    img(src='/images/logo.svg', width='160')
+    h1= sequence.treatise.title
+    h2= sequence.title
+    p
+      | Has 
+      = sequence.sequenceItems.length
+      |  items.
+    ul
+      each sequenceItem in sequence.sequenceItems
+        li
+          strong= sequenceItem.title
+          = sequenceItem.section
+          - console.log(sequenceItem)

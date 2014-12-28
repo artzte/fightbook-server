@@ -1,3 +1,5 @@
+'use strict';
+
 var keystone = require('keystone');
 
 // PUT /api/sequences/:sequenceId/items/:sectionId

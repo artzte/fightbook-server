@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 // Usage: node utils/generate_thumbs.js {treatise-key}
 //
 // TODO:

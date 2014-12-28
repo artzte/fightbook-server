@@ -1,3 +1,5 @@
+'use strict';
+
 var keystone = require('keystone'),
   Types = keystone.Field.Types,
   async = require('async'),

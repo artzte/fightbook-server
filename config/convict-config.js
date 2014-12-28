@@ -1,3 +1,5 @@
+'use strict';
+
 var convict = require('convict');
 
 // define a schema

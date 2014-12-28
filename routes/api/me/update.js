@@ -1,3 +1,5 @@
+'use strict';
+
 var keystone = require('keystone'),
   moment = require('moment'),
   User = keystone.list('User');

@@ -1,3 +1,5 @@
+'use strict';
+
 var keystone = require('keystone');
 
 // Must filter by: page, sequence, or section

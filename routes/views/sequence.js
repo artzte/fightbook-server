@@ -1,9 +1,11 @@
+'use strict';
+
 var keystone = require('keystone'),
   async = require('async'),
   _ = require('lodash'),
   retrieveSequence = require('../../lib/retrieve-sequence');
 
-exports = module.exports = function(req, res) {
+module.exports = function(req, res) {
 
   var view = new keystone.View(req, res),
     locals = res.locals;

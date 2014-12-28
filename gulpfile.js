@@ -9,7 +9,7 @@ var gulp = require('gulp'),
  * Create variables for our project paths so we can change in one place
  */
 var paths = {
-	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json', './utils/**/*.js', './config/*.js', './config/*.json']
+	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', './utils/**/*.js', './config/*.js']
 };
 
 // gulp lint

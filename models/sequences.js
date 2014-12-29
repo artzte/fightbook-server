@@ -1,6 +1,7 @@
 'use strict';
 
 var keystone = require('keystone'),
+  addJsonTransform = require('../lib/add-json-transform'),
   Types = keystone.Field.Types,
   async = require('async'),
   referenceDocument = require('../lib/reference-document'),
@@ -196,6 +197,8 @@ Sequence.schema.methods.removeItem = function(sectionId, cb) {
     cb(err, sequenceItem);
   });
 };
+
+addJsonTransform(Sequence.schema);
 
 Sequence.register();
 

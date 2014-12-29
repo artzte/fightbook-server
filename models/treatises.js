@@ -1,6 +1,7 @@
 'use strict';
 
 var keystone = require('keystone'),
+  addJsonTransform = require('../lib/add-json-transform'),
   Types = keystone.Field.Types,
   Treatise;
 
@@ -64,5 +65,7 @@ Treatise.add({
     height: 300
   }
 });
+
+addJsonTransform(Treatise.schema);
 
 Treatise.register();

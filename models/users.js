@@ -1,6 +1,7 @@
 'use strict';
 
 var keystone = require('keystone'),
+  addJsonTransform = require('../lib/add-json-transform'),
   Types = keystone.Field.Types,
   User;
 
@@ -65,5 +66,8 @@ User.schema.virtual('canAccessKeystone').get(function() {
   return this.isAdmin;
 });
 
+addJsonTransform(User.schema, {
+  attributes: ['name', 'treatises', 'sequences', 'content']
+});
 
 User.register();

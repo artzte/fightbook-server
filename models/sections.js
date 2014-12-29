@@ -1,6 +1,7 @@
 'use strict';
 
 var keystone = require('keystone'),
+  addJsonTransform = require('../lib/add-json-transform'),
   Types = keystone.Field.Types,
   Section;
 
@@ -80,6 +81,10 @@ Section.add({
     type: Types.Markdown,
     height: 300
   }
+});
+
+addJsonTransform(Section.schema, {
+  exclusions: ['author','slug','index']
 });
 
 Section.register();

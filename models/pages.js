@@ -1,6 +1,7 @@
 'use strict';
 
 var keystone = require('keystone'),
+  addJsonTransform = require('../lib/add-json-transform'),
   Types = keystone.Field.Types,
   Page;
 
@@ -65,4 +66,11 @@ Page.schema.pre('save', function(next) {
   return next();
 });
 
+
+addJsonTransform(Page.schema, {
+  exclusions: ['translation', 'author', 'index', 'state', 'path']
+});
+
 Page.register();
+
+

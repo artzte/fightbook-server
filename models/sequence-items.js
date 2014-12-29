@@ -1,6 +1,7 @@
 'use strict';
 
 var keystone = require('keystone'),
+  addJsonTransform = require('../lib/add-json-transform'),
   Types = keystone.Field.Types,
   SequenceItem;
 
@@ -42,5 +43,7 @@ SequenceItem.add({
     'default': Date.now
   }
 });
+
+addJsonTransform(SequenceItem.schema);
 
 SequenceItem.register();

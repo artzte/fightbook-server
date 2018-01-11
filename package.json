@@ -8,28 +8,26 @@
     "convict": "^0.6.0",
     "dotenv": "0.4.0",
     "gm": "^1.17.0",
-    "gulp": "^3.8.10",
-    "gulp-nodemon": "^1.0.4",
-    "keystone": "^0.2.33",
+    "keystone": "^4.0.0-beta.7",
     "lodash": "^2.4.1",
     "mkdirp": "^0.5.0",
     "moment": "^2.8.4",
-    "mongoose": "^3.8.19",
+    "pug": "^2.0.0-beta3",
     "underscore": "~1.7.0"
   },
   "devDependencies": {
-    "gulp": "~3.6.2",
+    "gulp": "^3.9.1",
     "gulp-exit": "0.0.2",
     "gulp-jshint": "~1.6.1",
     "gulp-mocha": "^2.0.0",
+    "gulp-nodemon": "^2.1.0",
     "gulp-watch": "~0.6.5",
     "jshint-stylish": "~0.1.3",
     "mocha": "^2.0.1",
     "should": "^4.4.1"
   },
   "engines": {
-    "node": ">=0.10.22",
-    "npm": ">=1.3.14"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "start": "node keystone.js"

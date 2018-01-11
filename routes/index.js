@@ -64,4 +64,8 @@ exports = module.exports = function(app) {
   app.post('/api/sequences/:sequenceId/items/:sectionId', admin, routes.api.sequences.items.create);
   app.put('/api/sequences/:sequenceId/items/:sectionId', admin, routes.api.sequences.items.update);
   app['delete']('/api/sequences/:sequenceId/items/:sectionId', admin, routes.api.sequences.items['delete']);
+
+  app.get('*', auth, function(req, res) {
+    res.send('Helloo');
+  });
 };
